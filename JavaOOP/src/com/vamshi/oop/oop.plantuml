@@ -1,0 +1,365 @@
+@startuml
+
+title __OOP's Class Diagram__\n
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.A {
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.AbstractionDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Addition {
+        {static} ~ a1 : int
+        {static} + findSum()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Addition1 {
+        + sum()
+        + sum()
+        + sum()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.AgentTicketBooking {
+        + AgentTicketBooking()
+        + ticketBooking()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.AggregationDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Apple {
+        + contacts : ArrayList<String>
+        + addContacts()
+        + call()
+        + sendMessage()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.B {
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.BankAccount {
+        - balance : double
+        + getBalance()
+        + setBalance()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.College {
+        ~ name : String
+        - teacher : List<Teacher>
+        + College()
+        + getTeacher()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.CompositionDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.DIPDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.DelegationDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Demo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.EncapsulationDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Fan {
+        {static} + num : int
+        - isOn : boolean
+        + turnOff()
+        + turnOn()
+        ~ Fan()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.FlightBooking {
+        + ticketBooking()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.House {
+        + House()
+        + getFood()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    interface com.vamshi.oop.ILogger {
+        {abstract} + logInformation()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.InheritanceDemo {
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    interface com.vamshi.oop.InterfaceDemo {
+        {static} + a : String
+        {abstract} + m1()
+        {abstract} + m2()
+        {static} + m3()
+        + m4()
+        - m5()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.JavaExample {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Kitchen {
+        - food : String
+        + getFood()
+        + setFood()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.LSPDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Logger {
+        + logInformation()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.LogginIntoDB {
+        + LogginIntoDB()
+        + logging()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.LogginIntoFile {
+        + LogginIntoFile()
+        + logging()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    interface com.vamshi.oop.Mobile {
+        {abstract} + call()
+        {abstract} + sendMessage()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    abstract class com.vamshi.oop.Mobile1 {
+        ~ contacts : ArrayList<String>
+        ~ addContacts()
+        {abstract} ~ calling()
+        {abstract} ~ sendMessage()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.OverloadingDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.OverridingDemo {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Samsung {
+        ~ calling()
+        ~ sendMessage()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Teacher {
+        ~ name : String
+        ~ subject : String
+        + Teacher()
+        + toString()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.TrainBooking {
+        + ticketBooking()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    interface com.vamshi.oop.TravelBooking {
+        {abstract} + ticketBooking()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.Vehicle {
+        ~ version : int
+        + run()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.bird {
+        + getinfo()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.car {
+        ~ price : int
+        + run()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.ostrich {
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.psudoAdd {
+        {static} + findSum()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.sparrow {
+        + fly()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    class com.vamshi.oop.test {
+        + m1()
+        + m2()
+        + m4()
+    }
+  }
+  
+
+  namespace com.vamshi.oop {
+    abstract class com.vamshi.oop.testabs {
+        {abstract} + method()
+    }
+  }
+  
+
+  com.vamshi.oop.AgentTicketBooking .up.|> com.vamshi.oop.TravelBooking
+  com.vamshi.oop.AgentTicketBooking o-- com.vamshi.oop.TravelBooking : t
+  com.vamshi.oop.Apple .up.|> com.vamshi.oop.Mobile
+  com.vamshi.oop.B -up-|> com.vamshi.oop.A
+  com.vamshi.oop.FlightBooking .up.|> com.vamshi.oop.TravelBooking
+  com.vamshi.oop.House o-- com.vamshi.oop.Kitchen : kitchen
+  com.vamshi.oop.Logger .up.|> com.vamshi.oop.ILogger
+  com.vamshi.oop.LogginIntoDB o-- com.vamshi.oop.ILogger : logger
+  com.vamshi.oop.LogginIntoFile o-- com.vamshi.oop.ILogger : logger
+  com.vamshi.oop.Samsung -up-|> com.vamshi.oop.Mobile1
+  com.vamshi.oop.TrainBooking .up.|> com.vamshi.oop.TravelBooking
+  com.vamshi.oop.car -up-|> com.vamshi.oop.Vehicle
+  com.vamshi.oop.ostrich -up-|> com.vamshi.oop.bird
+  com.vamshi.oop.psudoAdd -up-|> com.vamshi.oop.Addition
+  com.vamshi.oop.sparrow -up-|> com.vamshi.oop.bird
+  com.vamshi.oop.test .up.|> com.vamshi.oop.InterfaceDemo
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
