@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ec35405-a4b0-48fe-8f93-efd4c6e246a8" name="Default Changelist" comment="" />
+    <list default="true" id="1ec35405-a4b0-48fe-8f93-efd4c6e246a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Coursera/Java1/hello" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -146,10 +148,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="744" y="423" width="643" height="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.1053@67.27.1853.1053" timestamp="1583736973268" />
-    <state x="762" y="281" width="452" height="543" key="FileChooserDialogImpl" timestamp="1584966198994">
+    <state x="167" y="125" width="1653" height="855" key="DiffContextDialog" timestamp="1585208222591">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="762" y="281" width="452" height="543" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584966198994" />
+    <state x="167" y="125" width="1653" height="855" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585208222591" />
+    <state x="762" y="281" width="452" height="543" key="FileChooserDialogImpl" timestamp="1585215462626">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="762" y="281" width="452" height="543" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585215462626" />
     <state width="1807" height="260" key="GridCell.Tab.0.bottom" timestamp="1585207373753">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -182,10 +188,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="498" height="446" key="SwitcherDM/67.27.1853.1053@67.27.1853.1053" timestamp="1585054321114" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585195368052">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585215360199">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585195368052" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585215360199" />
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585208235224">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585208235224" />
     <state x="67" y="27" width="100" height="100" key="net.trustx.simpleuml.components.BirdViewFrame" timestamp="1583742058704">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
