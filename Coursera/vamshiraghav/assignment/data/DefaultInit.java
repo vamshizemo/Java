@@ -8,8 +8,8 @@ public class DefaultInit {
         System.out.println("uninitialized character is :"+letter);
     }
     public void printLocalVariables(){
-        int localNum;
-        char localLetter;
+        int localNum=0;
+        char localLetter='c';
         System.out.println("Uninitialized local number is :"+localNum);
         System.out.println("Uninitialized local character is :"+localLetter);
     }
