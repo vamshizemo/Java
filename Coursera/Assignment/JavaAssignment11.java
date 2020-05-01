@@ -16,16 +16,15 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class JavaAssignment11 {
-    public void charCountToFile() throws IOException {
-        String path="./Assignment/";
+    public void charCountToFile(String path) throws IOException {
+
         System.out.println("Enter the file name:");
         Scanner scan = new Scanner(System.in);
         String fName = scan.nextLine();
         scan.close();
-        try {
             File file = new File(path + fName);
             System.out.println(path + fName);
-            HashMap<Character, Integer> fileMap = new HashMap<Character, Integer>();
+            Map<Character, Integer> fileMap = new HashMap<>();
             char temp;
             if (!file.isDirectory()) {
                 FileReader reader = new FileReader(file.toString());
@@ -41,7 +40,7 @@ public class JavaAssignment11 {
                 }
                 reader.close();
                 System.out.println("file read..");
-                FileWriter writer = new FileWriter("./Assignment/MyFile.txt", false);
+                FileWriter writer = new FileWriter(path+"MyFile.txt", false);
                 BufferedWriter bufferedWriter = new BufferedWriter(writer);
                 for(char c:fileMap.keySet()){
                     bufferedWriter.write(c +" = "+fileMap.get(c));
@@ -55,20 +54,19 @@ public class JavaAssignment11 {
             else {
                 System.out.println("Enter the correct file name..");
             }
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
+
+
 
     }
 
-    public static void main(String[] args) throws  IOException{
+    public static void main(String[] args) {
         JavaAssignment11 object = new JavaAssignment11();
+        String path="./Assignment/";
         try {
-            object.charCountToFile();
-        }
-        catch (IOException e){
+            object.charCountToFile(path);
+        }catch (Exception e){
             e.printStackTrace();
         }
+
     }
 }
