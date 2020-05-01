@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class JavaAssignment9 {
 
-    public static Logger logger = Logger.getLogger(JavaAssignment9.class.getName());
+    private static Logger logger = Logger.getLogger(JavaAssignment9.class.getName());
     private static final Pattern pattern = Pattern.compile("[A-Z][^.]+\\.");
     private Matcher match;
 

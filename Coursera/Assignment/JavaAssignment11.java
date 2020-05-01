@@ -14,16 +14,19 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class JavaAssignment11 {
-    public void charCountToFile(String path) throws IOException {
+    private static Logger logger = Logger.getLogger(JavaAssignment11.class.getName());
 
-        System.out.println("Enter the file name:");
+    public void writeCharCountToFile(String path) throws IOException {
+
+        logger.info("Enter the file name:");
         Scanner scan = new Scanner(System.in);
         String fName = scan.nextLine();
         scan.close();
         File file = new File(path + fName);
-        System.out.println(path + fName);
+        logger.info(path + fName);
         Map<Character, Integer> fileMap = new HashMap<>();
         char temp;
         if (!file.isDirectory()) {
@@ -39,7 +42,7 @@ public class JavaAssignment11 {
                 }
             }
             reader.close();
-            System.out.println("file read..");
+            logger.info("file read..");
             FileWriter writer = new FileWriter(path + "MyFile.txt", false);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (char c : fileMap.keySet()) {
@@ -47,21 +50,21 @@ public class JavaAssignment11 {
                 bufferedWriter.newLine();
             }
             bufferedWriter.close();
-            System.out.println("file written");
+            logger.info("file written");
 
 
         } else {
-            System.out.println("Enter the correct file name..");
+            logger.info("Enter the correct file name..");
         }
 
 
     }
 
     public static void main(String[] args) {
-        JavaAssignment11 object = new JavaAssignment11();
+        JavaAssignment11 fileProcessor = new JavaAssignment11();
         String path = "./Assignment/";
         try {
-            object.charCountToFile(path);
+            fileProcessor.writeCharCountToFile(path);
         } catch (IOException e) {
             e.printStackTrace();
         }
