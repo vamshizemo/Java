@@ -17,7 +17,7 @@ public class JavaAssignment9 {
     private static final Pattern pattern = Pattern.compile("[A-Z][^.]+\\.");
     private Matcher match;
 
-    public boolean isStartingWithCapsAndEndsWithPeriod(String sentence){
+    public boolean isStartsWithCapsAndEndsWithPeriod(String sentence){
         match=pattern.matcher(sentence);
         return match.matches();
     }
@@ -40,7 +40,7 @@ public class JavaAssignment9 {
         "."};
         for(String testString : testStrings) {
             logger.info(testString+" --> "+toMessage(
-                    customPatternFinder.isStartingWithCapsAndEndsWithPeriod(testString)));
+                    customPatternFinder.isStartsWithCapsAndEndsWithPeriod(testString)));
         }
 
     }
