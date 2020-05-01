@@ -14,11 +14,11 @@ import java.util.regex.Pattern;
 public class JavaAssignment9 {
 
     public static Logger logger = Logger.getLogger(JavaAssignment9.class.getName());
-    private static Pattern p=Pattern.compile("[A-Z][^.]+[.]");
+    private static final Pattern pattern = Pattern.compile("[A-Z][^.]+\\.");
     private Matcher match;
 
     public boolean isStartingWithCapsAndEndsWithPeriod(String sentence){
-        match=p.matcher(sentence);
+        match=pattern.matcher(sentence);
         return match.matches();
     }
 
