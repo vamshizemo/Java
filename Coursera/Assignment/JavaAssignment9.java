@@ -8,27 +8,40 @@ resource, write and test a regular expression that checks
 
  */
 package Assignment;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class JavaAssignment9 {
-    public boolean isBegingWithCapsNEndsWithPer(String sentence){
-        String reg="[A-Z][^.]+.";
-        Pattern p=Pattern.compile(reg);
-        Matcher m=p.matcher(sentence);
-        return m.matches();
+
+    public static Logger logger = Logger.getLogger(JavaAssignment9.class.getName());
+    private static Pattern p=Pattern.compile("[A-Z][^.]+[.]");
+    private Matcher match;
+
+    public boolean isStartingWithCapsAndEndsWithPeriod(String sentence){
+        match=p.matcher(sentence);
+        return match.matches();
+    }
+
+    public static String toMessage(Boolean bool){
+        if(bool) {return "Pattern Found"; }
+        else{return "Pattern Not Found"; }
     }
 
     public static void main(String[] args) {
-        JavaAssignment9 object=new JavaAssignment9();
-        String test1,test2,test3,test4;
-        test1="This is the,first sentence.";
-        test2="this is second sentence.";
-        test3= "this is third sentence. And more,";
-        test4= "hi,This is third sentence. And more,";
-        System.out.println(object.isBegingWithCapsNEndsWithPer(test1));
-        System.out.println(object.isBegingWithCapsNEndsWithPer(test2));
-        System.out.println(object.isBegingWithCapsNEndsWithPer(test3));
-        System.out.println(object.isBegingWithCapsNEndsWithPer(test4));
+        JavaAssignment9 customPatternFinder=new JavaAssignment9();
+
+        String[] testStrings={
+        "This is the,first sentence.",
+        "this is second sentence.",
+        "this is third sentence. And more,",
+        "hi,This is third sentence. And more,",
+        "Apple",
+        "Friend.",
+        "."};
+        for(String testString : testStrings) {
+            logger.info(testString+" --> "+toMessage(
+                    customPatternFinder.isStartingWithCapsAndEndsWithPeriod(testString)));
+        }
 
     }
 }
