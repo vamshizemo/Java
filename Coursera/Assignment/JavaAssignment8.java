@@ -27,7 +27,7 @@ class ExceptionC extends Exception{
 }
 class AllExceptions{
     public void throwException(String text) throws ExceptionA,ExceptionB,ExceptionC {
-        try{
+
             if(text.equals("A")){
                 throw new ExceptionA("A");
             }else if(text.equals("B")){
@@ -36,9 +36,6 @@ class AllExceptions{
                 throw new ExceptionC("C");
             }
 
-        }catch (Exception e){
-            throw e;
-        }
     }
 }
 public class JavaAssignment8 {
