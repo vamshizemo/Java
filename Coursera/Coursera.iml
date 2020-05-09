@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Java1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MOOCTextEditor" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java-Array-Lists/week1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java-Array-Lists" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

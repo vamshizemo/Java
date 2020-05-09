@@ -3,6 +3,18 @@ package week1;
 import edu.duke.FileResource;
 
 public class CaesarCipher {
+    private String alphabet;
+    private String shiftedAlphabet;
+    private int theKey;
+
+    public CaesarCipher(int key) {
+        theKey = key;
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        shiftedAlphabet = alphabet.substring(key) +
+                alphabet.substring(0,key);
+        alphabet = alphabet + alphabet.toLowerCase();
+        shiftedAlphabet = shiftedAlphabet + shiftedAlphabet.toLowerCase();
+    }
     public String encrypt(String input,int key){
         char[] inputArray=input.toCharArray();
         String alphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -35,6 +47,9 @@ public class CaesarCipher {
             }
         }
         return String.valueOf(inputArray);
+    }
+    public String decrypt(String message,int key){
+        return modifiedEncrypt(message,26-key);
     }
     public String encryptTwoKeys(String input, int key1,int key2){
         char[] inputArray=input.toCharArray();
@@ -71,6 +86,22 @@ public class CaesarCipher {
         System.out.println("Modifiedencrypt message for key is " + key + "\n" + encrypted);
         encrypted = encryptTwoKeys("First Legion", 23, 17);
         System.out.println("Two keys are 23,17 \n" + encrypted);
+    }
+
+    private char transformLetter(char c, String from, String to) {
+        int idx = from.indexOf(c);
+        if (idx != -1) {
+            return to.charAt(idx);
+        }
+        return c;
+    }
+
+    public char encryptLetter(char c) {
+        return transformLetter(c, alphabet, shiftedAlphabet);
+    }
+
+    public char decryptLetter(char c) {
+        return transformLetter(c, shiftedAlphabet, alphabet);
     }
 
     public static void main(String[] args) {
